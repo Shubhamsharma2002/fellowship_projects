@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #262626;
+  font-family: Arial, sans-serif;
+}
+
+#main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ================= SIDEBAR ================= */
+
+#sidebar {
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid #dbdbdb;
+  padding: 30px 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+
+.logo {
+  font-family: cursive;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.menu li {
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu li:hover {
+  transform: scale(1.03);
+}
+
+/* ================= FEED ================= */
+
+#feed {
+  width: 55%;
+  margin-left: 20%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+}
+#feed::-webkit-scrollbar,
+.stories::-webkit-scrollbar {
+  display: none;
+}
+#feed,
+.stories {
+  scrollbar-width: none;
+}
+/* ================= STORIES ================= */
+
+.stories {
+  width: 520px;
+  min-height: 110px;
+  height: 110px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #efefef;
+}
+
+.stories::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  width: 72px;
+  min-width: 72px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.story img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #e1306c;
+  padding: 3px;
+  object-fit: cover;
+}
+
+.story p {
+  font-size: 12px;
+  margin-top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ================= POSTS ================= */
+
+.posts {
+  width: 520px;
+}
+
+.post {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 22px;
+  margin-bottom: 30px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  border: 1px solid #dbdbdb;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  padding: 12px 0;
+}
+
+.post-buttons div {
+  display: flex;
+  gap: 14px;
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.comment-count {
+  color: #8e8e8e;
+  margin: 8px 0;
+}
+
+.post input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+#right-panel {
+  width: 25%;
+  height: 100vh;
+  padding: 40px 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+}
+
+.profile-card,
+.suggestion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.profile-card img,
+.suggestion img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-card div,
+.suggestion div {
+  flex: 1;
+}
+
+.profile-card p,
+.suggestion p {
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.profile-card a,
+.suggestion a,
+.suggestion-heading a {
+  text-decoration: none;
+  color: #0095f6;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.suggestion-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  color: #8e8e8e;
+}
+
+footer {
+  margin-top: 40px;
+  color: #c7c7c7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+  #right-panel {
+    display: none;
+  }
+
+  #feed {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    display: block;
+  }
+
+  /* Sidebar Bottom */
+
+  #sidebar {
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    top: auto;
+    z-index: 999;
+    border-right: none;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .menu li {
+    font-size: 0;
+  }
+
+  .menu li::first-letter {
+    font-size: 22px;
+  }
+
+  /* Feed */
+
+  #feed {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 75px;
+  }
+
+  .stories,
+  .posts {
+    width: 95%;
+  }
+
+  .stories {
+    height: 105px;
+  }
+
+  .post-image {
+    max-height: 450px;
+  }
+}
