@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Pizza Restaurant</title>
+
+  <meta
+    name="description"
+    content="Responsive Pizza Restaurant Website"
+  />
+
+  <link
+    rel="icon"
+    href="https://cdn-icons-png.flaticon.com/512/3132/3132693.png"
+  />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+      Pizza Restaurant
+    </div>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#carousel-section">BLOGS</a></li>
+        <li><a href="#gallery">TESTIMONY</a></li>
+        <li><a href="#find-us">FIND US</a></li>
+        <li><a href="#footer">OUR TEAM</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-icons">
+      <span>📷</span>
+      <span>👍</span>
+      <span>🐦</span>
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <h1>
+          Craving for a <br />
+          cheesy pizza?
+        </h1>
+
+        <div class="line"></div>
+
+        <p>
+          Enjoy delicious handcrafted pizzas made with fresh ingredients,
+          rich cheese, and authentic flavors.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+      <h2>ABOUT US</h2>
+
+      <div class="about-container">
+
+        <div class="about-text">
+          <div class="small-line"></div>
+
+          <p>
+            We serve authentic and freshly baked pizzas with premium
+            ingredients. Our mission is to provide a warm dining
+            experience with mouth-watering flavors and unforgettable taste.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+            alt="Pizza making process"
+          />
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+      <h2>MENU</h2>
+
+      <div class="small-line center"></div>
+
+      <p class="menu-description">
+        Explore the wide range of pizza baked in fresh dough and vegetables.
+      </p>
+
+      <div class="menu-grid">
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+            alt="Margherita Pizza"
+          />
+
+          <div>
+            <h3>Margherita</h3>
+            <p>Classic cheese pizza with fresh basil.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1548365328-9f547fb0953b"
+            alt="Pepperoni Pizza"
+          />
+
+          <div>
+            <h3>Pepperoni</h3>
+            <p>Loaded with spicy pepperoni & cheese.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+            alt="Veggie Pizza"
+          />
+
+          <div>
+            <h3>Veggie Pizza</h3>
+            <p>Fresh vegetables and mozzarella cheese.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143"
+            alt="Cheese Burst Pizza"
+          />
+
+          <div>
+            <h3>Cheese Burst</h3>
+            <p>Extra cheesy delight with crispy crust.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+            alt="Farmhouse Pizza"
+          />
+
+          <div>
+            <h3>Farmhouse</h3>
+            <p>Loaded with onions, capsicum and mushrooms.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img
+            src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49"
+            alt="Mexican Pizza"
+          />
+
+          <div>
+            <h3>Mexican Green Wave</h3>
+            <p>Spicy mexican herbs with crunchy veggies.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="carousel-wrapper" id="carousel-section">
+
+      <h2>Carousel</h2>
+
+      <div
+        id="pizzaCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
+              class="d-block w-100"
+              alt="Pizza image 1"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1548365328-9f547fb0953b"
+              class="d-block w-100"
+              alt="Pizza image 2"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+              class="d-block w-100"
+              alt="Pizza image 3"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143"
+              class="d-block w-100"
+              alt="Pizza image 4"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+              class="d-block w-100"
+              alt="Pizza image 5"
+            />
+          </div>
+
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#pizzaCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#pizzaCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+
+      <h2>Gallery</h2>
+
+      <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Gallery pizza 1" />
+        <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953b" alt="Gallery pizza 2" />
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Gallery pizza 3" />
+        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143" alt="Gallery pizza 4" />
+        <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" alt="Gallery pizza 5" />
+        <img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49" alt="Gallery pizza 6" />
+
+      </div>
+
+    </section>
+
+    <!-- FIND US -->
+    <section class="find-us" id="find-us">
+
+      <h2>FIND US</h2>
+
+      <div class="find-container">
+
+        <div class="find-text">
+
+          <p>
+            Visit our restaurant and enjoy delicious pizzas with family and friends.
+          </p>
+
+          <p>📍 MG Road, Delhi, India</p>
+          <p>📞 +91 9876543210</p>
+
+        </div>
+
+        <div class="map">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8979690274!2d77.04417459569084!3d28.52755441048926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d194f47c2b7f7%3A0xf9c2b9d8db0a5c6f!2sDelhi!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+
+    <div class="footer-content">
+
+      <div>
+        🍕 Pizza Restaurant
+      </div>
+
+      <div>
+        <p>📧 mail@pizzarestaurant.com</p>
+        <p>📞 +91 9876543210</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
