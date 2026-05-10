@@ -1,0 +1,43 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Georgia, serif;
+}
+
+.top-section {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.top-section h1,
+.image-section h1,
+.trivia-section h1 {
+    text-decoration: underline;
+}
+
+.top-section p {
+    line-height: 1.5;
+}
+
+.image-section {
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 300px;
+    height: auto;
+}
+
+.trivia-section {
+    margin-top: 20px;
+}
+
+.trivia-section ol {
+    padding-left: 20px;
+}
+
+.trivia-section li {
+    margin-bottom: 8px;
+}
