@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Signup Form</title>
+
+  <meta
+    name="description"
+    content="Responsive Signup Form with validation"
+  />
+
+  <link
+    rel="icon"
+    href="https://cdn-icons-png.flaticon.com/512/747/747376.png"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Signup</h1>
+  </header>
+
+  <main>
+
+    <form>
+
+      <!-- Full Name -->
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+        />
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <input
+          type="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <input
+          type="password"
+          placeholder="Password"
+          pattern=".{6,}"
+          title="Password must be at least 6 characters"
+          required
+        />
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="input-group">
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+
+      <!-- Date -->
+      <div class="input-group">
+        <input
+          type="date"
+          required
+        />
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="radio-group">
+
+        <label>
+          <input
+            type="radio"
+            name="user"
+            required
+          />
+          Student
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="user"
+          />
+          Employee
+        </label>
+
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox-group">
+
+        <label>
+          <input
+            type="checkbox"
+            required
+          />
+          I agree to all the Terms and conditions
+        </label>
+
+      </div>
+
+      <!-- Button -->
+      <button type="submit">
+        Signup
+      </button>
+
+    </form>
+
+  </main>
+
+ 
+
+</body>
+</html>

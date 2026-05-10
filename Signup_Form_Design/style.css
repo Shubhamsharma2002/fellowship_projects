@@ -1,0 +1,112 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+header {
+  width: 70%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  font-size: 28px;
+  color: white;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: white;
+}
+
+.input-group input[type="date"] {
+  color: white;
+}
+
+.radio-group,
+.checkbox-group {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: gray;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  header,
+  main {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  .input-group input {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
