@@ -17,8 +17,6 @@ Welcome to my central repository for all frontend and web development projects c
 
 ---
 
-
-
 ## 🛠️ Skills & Technologies
 
 - HTML5
@@ -30,6 +28,7 @@ Welcome to my central repository for all frontend and web development projects c
 - UI Development
 - Semantic HTML
 - Accessibility Basics
+
 
 ---
 
