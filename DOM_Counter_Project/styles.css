@@ -1,0 +1,90 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counter-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#counter-display {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #222;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#increment-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#increment-btn:hover {
+    background-color: #218838;
+}
+
+#decrement-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#decrement-btn:hover {
+    background-color: #c82333;
+}
+
+#clear-btn {
+    width: 100%;
+    background-color: #6c757d;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Error Message States */
+.error-text {
+    color: #dc3545;
+    font-size: 0.9rem;
+    font-weight: bold;
+    min-height: 20px; 
+    visibility: hidden; 
+}
+
+/* Visibility Helper Rule */
+.hidden {
+    display: none;
+}
