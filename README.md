@@ -1,6 +1,6 @@
 # Fellowship Projects Portfolio 🚀
 
-Welcome to my central repository for all frontend and web development projects created during my learning journey. This repository showcases responsive UI projects built using HTML, CSS, Bootstrap, and modern web design concepts.
+Welcome to my central repository for all frontend and web development projects created during my learning journey. This repository showcases responsive UI projects built using HTML, CSS, Bootstrap, and modern web design concepts.  
 
 ---
 
