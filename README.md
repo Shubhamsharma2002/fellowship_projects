@@ -4,8 +4,6 @@ Welcome to my central repository for all frontend and web development projects c
 
 ---
 
-
-
 ## 📂 Projects & Assignments
 
 | No. | Project | Tech Stack | Folder | Status |
