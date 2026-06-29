@@ -16,7 +16,7 @@ Welcome to my central repository for all frontend and web development projects c
 | 04 | Pizza Restaurant Website | HTML, CSS, Bootstrap | `Pizza_Restaurant_UI` | ✅ Completed |
 | 05 | Instagram Clone | HTML, CSS, Flexbox | `Insta_Clone_using_HTML&CSS` | ✅ Completed |
 | 06 | John_And_His_Friends | HTML, js | `John_And_His_Friends` | ✅ Completed |
-
+| 07 | DOM_Counter_Project | HTML, js | `DOM_Counter_Project` | ✅ Completed |
 ---
 
 ##
