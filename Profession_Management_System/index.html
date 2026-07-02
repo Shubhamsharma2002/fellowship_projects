@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <style>
+        /* Design ke mutabik Dark Theme Layout */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* Inputs ko ek row mein lane ke liye Flexbox */
+        #dataform {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .input-group label {
+            font-size: 0.8rem;
+            color: #ffffff;
+        }
+
+        .input-group input {
+            background-color: #000000;
+            border: 1px solid #333333;
+            color: #ffffff;
+            padding: 10px;
+            width: 250px;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #555555;
+        }
+
+        /* Add User Button Styling */
+        #add-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border-radius: 2px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Error and Success Message Container */
+        #message-container {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .error-msg {
+            color: #ff3333;
+        }
+
+        .success-msg {
+            color: #00ff00;
+        }
+
+        /* Added Employees List Container */
+        #employee-list {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .default-text {
+            color: #888888;
+            font-size: 0.9rem;
+        }
+
+        /* Individual Employee Row Style (for JS manipulation) */
+        .employee-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .employee-info {
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            display: flex;
+            gap: 20px;
+            font-size: 0.9rem;
+            min-width: 300px;
+        }
+
+        .delete-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>New Employees</h2>
+
+    <form id="dataform">
+        <div class="input-group">
+            <label id="label-name" for="name">Enter Name</label>
+            <input type="text" id="name" autocomplete="off">
+        </div>
+        <div class="input-group">
+            <label id="label-profession" for="profession">Enter Profession</label>
+            <input type="text" id="profession" autocomplete="off">
+        </div>
+        <div class="input-group">
+            <label id="label-age" for="age">Enter Age</label>
+            <input type="number" id="age" autocomplete="off">
+        </div>
+    </form>
+
+    <button id="add-btn">Add User</button>
+
+    <div id="message-container"></div>
+
+    <h3>Added Employees</h3>
+
+    <div id="employee-list">
+        <p class="default-text">You have 0 Employees.</p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
