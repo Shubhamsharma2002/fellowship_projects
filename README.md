@@ -32,7 +32,6 @@ Welcome to my central repository for all frontend and web development projects c
 - Semantic HTML
 - Accessibility Basics
 
-
 ---
 
 ## 📱 Features Implemented
