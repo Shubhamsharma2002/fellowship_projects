@@ -15,6 +15,7 @@ Welcome to my central repository for all frontend and web development projects c
 | 05 | Instagram Clone | HTML, CSS, Flexbox | `Insta_Clone_using_HTML&CSS` | ✅ Completed |
 | 06 | John_And_His_Friends | HTML, js | `John_And_His_Friends` | ✅ Completed |
 | 07 | DOM_Counter_Project | HTML, js | `DOM_Counter_Project` | ✅ Completed |
+| 08 | Profession_Management_System | HTML, js | `Profession_Management_System` | ✅ Completed |
 ---
 
 ##
