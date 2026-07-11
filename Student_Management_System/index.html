@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Student Portal</h1>
+    </header>
+
+    <main class="portal-container">
+        <!-- Search Controls Component -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search" autocomplete="off">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Layout Controls Component -->
+        <div class="action-bar">
+            <button id="sortAZ">Sort A&rarr;Z</button>
+            <button id="sortZA">Sort Z&rarr;A</button>
+            <button id="sortMarks">Sort By Marks</button>
+            <button id="sortPassing">Sort By Passing</button>
+            <button id="sortClass">Sort By Class</button>
+            <button id="sortGender">Sort By Gender</button>
+        </div>
+
+        <!-- Dynamic Output Container Component -->
+        <div id="tableContainer">
+            <!-- JavaScript will render the data tables here dynamically -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
