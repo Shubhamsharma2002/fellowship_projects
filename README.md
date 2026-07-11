@@ -16,6 +16,8 @@ Welcome to my central repository for all frontend and web development projects c
 | 06 | John_And_His_Friends | HTML, js | `John_And_His_Friends` | ✅ Completed |
 | 07 | DOM_Counter_Project | HTML, js | `DOM_Counter_Project` | ✅ Completed |
 | 08 | Profession_Management_System | HTML, js | `Profession_Management_System` | ✅ Completed |
+| 09 | Student_Management_System  | HTML, css, js | `Student_Management_System` | ✅ Completed |
+| 10 | Sign_Up_Challenge    | HTML, css, js | `Sign_Up_Challenge` | ✅ Completed |
 ---
 
 
