@@ -22,6 +22,7 @@ Welcome to my central repository for all frontend and web development projects c
 
 
 ##
+
  🛠️ Skills & Technologies
 
 - HTML5
