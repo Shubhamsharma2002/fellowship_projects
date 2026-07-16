@@ -249,6 +249,8 @@ function restoreDashboardView() {
   document.body.style.alignItems = "center"; // Re-center the selection panel layout
 }
 
+
+
 function updateScoreUI() {
   scoreDisplay.textContent = `Score: ${userScore}`;
 }
