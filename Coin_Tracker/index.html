@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Top Controls Section -->
+    <div class="controls">
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search By Name or Symbol" 
+      />
+      <button id="sort-mkt-cap-btn">Sort By Mkt Cap</button>
+      <button id="sort-percentage-btn">Sort by percentage</button>
+    </div>
+
+    <!-- Crypto Table -->
+    <table id="crypto-table">
+      <tbody id="table-body">
+        <!-- Rows dynamically injected here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
