@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.search-section {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.search-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#search-form {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#search-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#search-form button {
+  padding: 10px 20px;
+  background-color: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#search-form button:hover {
+  background-color: #0369a1;
+}
+
+/* Current Image Container */
+.image-container {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  min-height: 300px;
+}
+
+.image-container h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.image-container h3 {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 15px;
+}
+
+.image-container img, 
+.image-container iframe {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.image-container p {
+  color: #e2e8f0;
+  text-align: justify;
+}
+
+/* History Section */
+.history-section {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.history-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#search-history {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#search-history li {
+  background-color: #334155;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#search-history li:hover {
+  background-color: #0284c7;
+}
+
+.error-msg {
+  color: #f87171;
+  font-weight: bold;
+}

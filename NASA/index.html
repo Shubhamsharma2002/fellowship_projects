@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NASA Picture of the Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>NASA Picture of the Day</h1>
+  </header>
+
+  <main class="container">
+    <!-- Search Form Section -->
+    <section class="search-section">
+      <h2>Search for a Picture by Date</h2>
+      <form id="search-form">
+        <label for="search-input">Select Date:</label>
+        <input type="date" id="search-input" required />
+        <button type="submit">Get Image</button>
+      </form>
+    </section>
+
+    <!-- Main Display Container -->
+    <section id="current-image-container" class="image-container">
+      <!-- Dynamic content from NASA API will render here -->
+    </section>
+
+    <!-- Search History Section -->
+    <section class="history-section">
+      <h2>Search History</h2>
+      <ul id="search-history">
+        <!-- Dynamic list of past searches -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
