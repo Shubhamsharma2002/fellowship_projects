@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Office Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Landing View (Before Clicking Button) -->
+  <div id="landing-page" class="landing-container">
+    <div class="landing-left">
+      <h1>Post Office Application.</h1>
+      <p>This Application allows you to extract information about the nearest Post Offices based on your location.</p>
+      <div class="illustration-placeholder">
+        <!-- Optional SVG/Image matching the illustration -->
+        <svg width="150" height="150" viewBox="0 0 24 24" fill="#6c757d">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="landing-right">
+      <p>Your Current IP Address is <span id="user-ip-landing">Fetching...</span></p>
+      <button id="get-started-btn">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Main View (After Clicking Button) -->
+  <div id="main-page" class="main-container hidden">
+    <!-- Top Details Header -->
+    <header class="top-info">
+      <div class="info-group">
+        <p><strong>IP Address :</strong> <span id="user-ip"></span></p>
+        <p><strong>Lat:</strong> <span id="lat"></span></p>
+        <p><strong>Long:</strong> <span id="long"></span></p>
+      </div>
+      <div class="info-group">
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>Region:</strong> <span id="region"></span></p>
+      </div>
+      <div class="info-group">
+        <p><strong>Organisation:</strong> <span id="org"></span></p>
+        <p><strong>Hostname:</strong> <span id="hostname"></span></p>
+      </div>
+    </header>
+
+    <!-- Google Map Section -->
+    <section class="map-section">
+      <h2>Your Current Location</h2>
+      <div class="iframe-container">
+        <iframe id="map-iframe" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Time & Postal Information Section -->
+    <section class="more-info-section">
+      <h2>More Information About You</h2>
+      <p><strong>Time Zone:</strong> <span id="timezone"></span></p>
+      <p><strong>Date And Time:</strong> <span id="datetime"></span></p>
+      <p><strong>Pincode:</strong> <span id="pincode"></span></p>
+      <p><strong>Message:</strong> <span id="post-office-count"></span></p>
+    </section>
+
+    <!-- Post Office Search & Cards Section -->
+    <section class="post-offices-section">
+      <h2>Post Offices Near You</h2>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="🔍 Search By Name or Branch Office">
+      </div>
+      <div id="post-office-grid" class="cards-grid">
+        <!-- Dynamically populated cards -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
