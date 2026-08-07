@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeZone API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Section (Current Timezone) -->
+  <div class="top-section">
+    <div class="container">
+      <h1>TimeZone API</h1>
+      <h2>Your Current Time Zone</h2>
+
+      <div class="info-card" id="current-timezone-card">
+        <p>Loading current timezone data...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Section (Address Search) -->
+  <div class="bottom-section">
+    <div class="container">
+      <h2>Enter Address</h2>
+      <div class="search-box">
+        <input type="text" id="address-input" placeholder="Address">
+        <button id="submit-btn">Submit</button>
+      </div>
+      
+      <!-- Error Message Container -->
+      <div id="error-message" class="error-text"></div>
+
+      <!-- Result Card Container -->
+      <div id="result-wrapper" style="display: none;">
+        <h2>Your result</h2>
+        <div class="info-card dark-card" id="result-timezone-card"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
