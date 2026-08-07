@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-avatar">
+          <span class="chef-icon">👨‍🍳</span>
+        </div>
+        <h2>Your Restaurant Menu</h2>
+        <p class="slogan">Your Slogan</p>
+      </div>
+
+      <div class="nav-group">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#" id="nav-home" class="active">1. Home</a></li>
+          <li><a href="#" id="nav-orders">2. Your Orders</a></li>
+          <li><a href="#">3. Wallet</a></li>
+          <li><a href="#">4. Profile</a></li>
+          <li><a href="#">5. Logout</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <h3>More About Us</h3>
+        <ul>
+          <li><a href="#">1. Our blog</a></li>
+          <li><a href="#">2. Upcoming Dishes</a></li>
+          <li><a href="#">3. Our Story</a></li>
+          <li><a href="#">4. Social Media Links</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Header Navigation -->
+      <header class="top-header">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search food item..." />
+        </div>
+        <div class="auth-buttons">
+          <button class="btn btn-signup">Signup</button>
+          <button class="btn btn-login">Login</button>
+          <span class="user-avatar">👤</span>
+        </div>
+      </header>
+
+      <!-- View 1: Landing Screen Banner -->
+      <section id="hero-banner" class="hero-banner">
+        <div class="banner-content">
+          <span class="special-tag">🍽 LOGO HERE</span>
+          <h2>WEEKEND SPECIAL</h2>
+          <h1>Delicious <br>FOOD MENU</h1>
+          <button id="order-now-btn" class="btn-order">ORDER NOW</button>
+          <div class="contact-info">
+            <p class="phone">323-517-4946</p>
+            <p class="site">WWW.YOURWEBSITE.COM</p>
+          </div>
+        </div>
+        <div class="banner-badge">
+          <span>24/7 Home Delivery</span>
+        </div>
+      </section>
+
+      <!-- View 2 Header (Hidden by default, shown when viewing full menu) -->
+      <div id="menu-header" class="section-title">
+        <h2>Menu</h2>
+      </div>
+
+      <!-- Food Menu Grid -->
+      <section id="menu-container" class="menu-grid">
+        <!-- Dynamic Cards Injected Here -->
+      </section>
+
+      <!-- Order Status Modal -->
+      <div id="status-modal" class="modal hidden">
+        <div class="modal-content">
+          <h3 id="modal-status">Processing Order...</h3>
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
