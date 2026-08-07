@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <form class="add-item-form" id="todo-form">
+      <input type="text" id="item-name" placeholder="Item Name" required>
+      <input type="date" id="item-date" required>
+      <select id="item-priority" required>
+        <option value="" disabled selected hidden>Priority</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit">Add Item</button>
+    </form>
+
+    <div class="section-title">Today's TodoList</div>
+    <div class="task-list" id="todays-list"></div>
+
+    <div class="section-title">Future TodoList</div>
+    <div class="task-list" id="future-list"></div>
+
+    <div class="section-title">Completed TodoList</div>
+    <div class="task-list" id="completed-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
