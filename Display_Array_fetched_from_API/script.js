@@ -44,7 +44,7 @@ function PromiseAPI2() {
             tr.innerHTML = `
               <td>${product.id}</td>
               <td>${product.title}</td>
-              <td>${product.brand || 'N/A'}</td>
+              <td>${product.brand || "N/A"}</td>
               <td>$${product.price}</td>
             `;
             productsTbody.appendChild(tr);
