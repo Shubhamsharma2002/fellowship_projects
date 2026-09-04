@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MeShop - Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">MeShop.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+      <a href="cart.html">My Cart</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <h2>My Profile</h2>
+    <form id="profile-info-form">
+      <input type="text" id="prof-fname" placeholder="First Name" class="input-field" required>
+      <input type="text" id="prof-lname" placeholder="Last Name" class="input-field" required>
+      <button type="submit" class="btn-black">Save Info</button>
+    </form>
+
+    <h2 style="margin-top: 40px;">Edit Password</h2>
+    <form id="password-form">
+      <input type="password" id="old-pass" placeholder="Old Password" class="input-field" required>
+      <input type="password" id="new-pass" placeholder="New Password" class="input-field" required>
+      <input type="password" id="confirm-new-pass" placeholder="Confirm New Password" class="input-field" required>
+      <button type="submit" class="btn-black">Change Password</button>
+    </form>
+
+    <div style="margin-top: 24px;">
+      <button id="logoutBtn" class="btn-black" style="background-color: #d32f2f; border-color: #d32f2f;">Logout</button>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script>checkAuth();</script>
+  <script src="profile.js"></script>
+</body>
+</html>
