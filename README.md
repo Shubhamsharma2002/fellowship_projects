@@ -35,7 +35,6 @@ Welcome to my central repository for all frontend and web development projects c
 
 ---
 
-
 ## 📱 Features Implemented
 
 - Responsive layouts for all screen sizes
