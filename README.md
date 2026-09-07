@@ -19,8 +19,6 @@ Welcome to my central repository for all frontend and web development projects c
 | 09 | Student_Management_System  | HTML, css, js | `Student_Management_System` | ✅ Completed |
 | 10 | Sign_Up_Challenge    | HTML, css, js | `Sign_Up_Challenge` | ✅ Completed |
 ---
-
-
 ##
 
  🛠️ Skills & Technologies
