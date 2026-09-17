@@ -1,0 +1,157 @@
+:root {
+  --bg-primary: #f8fafc;
+  --bg-card: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --btn-bg: #e2e8f0;
+  --btn-hover: #cbd5e1;
+  --btn-active: #2563eb;
+  --btn-active-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.main-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Filter Section */
+.genre-filter-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.genre-filter-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--text-main);
+}
+
+.genre-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-btn {
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.genre-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-1px);
+}
+
+.genre-btn:active {
+  transform: translateY(0);
+}
+
+.genre-btn.active {
+  background-color: var(--btn-active);
+  color: var(--btn-active-text);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Movies Table Section */
+.table-wrapper {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.movies-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.movies-table th {
+  background-color: #f8fafc;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 18px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.movies-table td {
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.movies-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.movies-table tbody tr:hover td {
+  background-color: #f8fafc;
+}
+
+.movie-title {
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.genre-badge {
+  display: inline-block;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.82rem;
+  color: #475569;
+}
+
+.movie-year {
+  color: var(--text-muted);
+}
+
+.no-movies {
+  text-align: center;
+  padding: 32px 18px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
