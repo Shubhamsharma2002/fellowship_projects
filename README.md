@@ -36,9 +36,9 @@ Welcome to my central repository for all frontend and web development projects c
 
 | No. | Project | Tech Stack | Folder | Status |
 |---|---|---|---|---|
-| 21 | React Project 01 | React, JavaScript | `...` | 🚧 In Progress |
-| 22 | React Project 02 | React, JavaScript | `...` | 🚧 In Progress |
-| 23 | React Project 03 | React, JavaScript | `...` | 🚧 In Progress |
+| 21 | React Movie App  | React, JavaScript | `reactMovieApp` | 🚧 In Progress |
+| 22 | React Form-2     | React, JavaScript | `reactForm-2`   | 🚧 In Progress |
+| 23 | React Project 03 | React, JavaScript | `...`           | 🚧 In Progress |
 
 ##
 
