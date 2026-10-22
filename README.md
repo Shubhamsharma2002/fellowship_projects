@@ -37,7 +37,10 @@ Welcome to my central repository for all frontend and web development projects c
 |---|---|---|---|---|
 | 21 | React Movie App  | React, JavaScript | `reactMovieApp` | ✅ Completed   |
 | 22 | React Form-2     | React, JavaScript | `reactForm-2`   | ✅ Completed   |
-| 23 | React Project 03 | React, JavaScript | `...`           | 🚧 In Progress |
+| 24 | crypto-tracker   | React, JavaScript | `crypto-tracker`| ✅ Completed   |
+| 25 | auth-system      | React, JavaScript | `auth-system`   | ✅ Completed   |
+| 26 | pincode-lookup   | React, JavaScript | `pincode-lookup`| ✅ Completed   |
+| 27 | React Project 03 | React, JavaScript | `...`           | 🚧 In Progress |
 
 
 ##
